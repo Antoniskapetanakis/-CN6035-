@@ -28,7 +28,7 @@
 
 1.  **Κλωνοποιήστε το αποθετήριο:**
     ```bash
-    git clone <το-URL-του-αποθετηρίου-σου>
+    git clone <https://github.com/Antoniskapetanakis/-CN6035->
     cd restaurant-reservation-app
     ```
 
