@@ -1,41 +1,48 @@
 {
   "expo": {
-    "name": "frontend",
-    "slug": "frontend",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
+    "name": "ReserveatApp",
+    "slug": "reserveat",
+    "displayName": "Restaurant Reservation App",
+    "platforms": ["ios", "android", "web"],
+    "version": "1.0.0", 
+	"orientation": "portrait",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "icon": "./assets/icon.png",
     "ios": {
+      "bundleIdentifier": "com.yourname.restaurantreservationapp",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+      "package": "com.yourname.restaurantreservationapp",
+      "versionCode": 1
     },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
-    },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ]
+    "assetBundlePatterns": [
+      "assets/images/*"
     ],
-    "experiments": {
-      "typedRoutes": true
+    "linking": {
+      "prefixes": ["http://localhost:8081"],
+      "config": {
+        "screens": {
+          "login": "",
+          "home": "home",
+          "register": "register",
+          "about": "about",
+          "contact": "contact",
+          "NotFound": "*"
+        }
+      }
     }
   }
 }
+
+
+
+
